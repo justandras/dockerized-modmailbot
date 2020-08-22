@@ -7,4 +7,5 @@ COPY . /app
 
 RUN npm install --only=production
 
-CMD [ "node", "main.js" ]
+VOLUME ["/app/attachments", "/app/db", "/app/logs"]
+CMD [ "node", "src/index.js" ]

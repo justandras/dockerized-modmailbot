@@ -13,7 +13,7 @@ Send a reply to the user.
 
 **Example:** `!r How can I help you?`
 
-To reply automatically without using `!reply`, [enable `alwaysReply` in bot settings](configuration.md).
+To reply automatically without using `!reply`, [turn on `alwaysReply` in bot settings](configuration.md).
 
 ### `!anonreply <text>` / `!ar <text>`
 Send an anonymous reply to the user. Anonymous replies only show the moderator's role in the reply.
@@ -27,6 +27,9 @@ Close the Modmail thread.
 Close the Modmail thread after a timer. Sending a message to the user or receiving a message from the user will cancel scheduled closing.
 
 **Example:** `!close 15m`
+
+### `!close -s` / `!close -s <time>`
+Close the Modmail thread without notifying the user that it was closed.
 
 ### `!close cancel`
 Cancel a timed close.
@@ -62,6 +65,23 @@ Pings you when the thread gets a new reply.
 ### `!alert cancel`
 Cancel the ping set by `!alert`.
 
+### `!edit <number> <new text>`
+Edit your own previous reply sent with `!reply`.  
+`<number>` is the message number shown in front of staff replies in the thread channel.
+
+### `!delete <number>`
+Delete your own previous reply sent with `!reply`.  
+`<number>` is the message number shown in front of staff replies in the thread channel.
+
+### `!role`
+View your display role for the thread - the role that is shown in front of your name in your replies
+
+### `!role reset`
+Reset your display role for the thread to the default
+
+### `!role <role name>`
+Change your display role for the thread to any role you currently have
+
 ### `!loglink`
 Get a link to the open Modmail thread's log.
 
@@ -74,6 +94,13 @@ This is mainly useful when reporting messages to Discord's Trust & Safety team.
 
 ### `!id`
 Prints the user's ID.
+
+### `!dm_channel_id`
+Prints the ID of the current DM channel with the user
+
+### `!message <number>`
+Shows the DM channel ID, DM message ID, and message link of the specified user reply.
+`<number>` is the message number shown in front of staff replies in the thread channel.
 
 ## Anywhere on the inbox server
 These commands can be used anywhere on the inbox server, even outside Modmail threads.
@@ -107,6 +134,15 @@ Unblock the specified user, allowing them to use Modmail again.
 Check if the specified user is blocked.
 
 **Example:** `!is_blocked 106391128718245888`
+
+### `!role`
+(Outside a modmail thread) View your default display role - the role that is shown in front of your name in your replies
+
+### `!role reset`
+(Outside a modmail thread) Reset your default display role
+
+### `!role <role name>`
+(Outside a modmail thread) Change your default display role to any role you currently have
 
 ### `!version`
 Show the Modmail bot's version.

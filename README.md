@@ -7,7 +7,6 @@ To the user, the entire process happens in DMs with the bot.
 Inspired by Reddit's modmail system.
 
 This repo is a fork of [arunesh90/dockerized-modmailbot](https://github.com/arunesh90/dockerized-modmailbot).
-
 [Original Modmail Bot repo](https://github.com/Dragory/modmailbot)
 
 Current version: v3.3.0

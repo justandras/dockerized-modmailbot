@@ -10,7 +10,7 @@ This repo is a fork of [arunesh90/dockerized-modmailbot](https://github.com/arun
 
 [Original Modmail Bot repo](https://github.com/Dragory/modmailbot)
 
-Current version: v3.3.0
+Current version: v3.3.2
 
 Always take a backup of your `db/data.sqlite` file before updating the bot.
 
